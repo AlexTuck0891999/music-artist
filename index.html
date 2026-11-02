@@ -1,51 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Alex Tuck | 11/02/2026 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velvet Rot | Official Website</title>
+    <link rel="stylesheet" href="styles.css">
 
-    <style>
-        /* ================
-            Page Styles
-        ================ */
-        
-        /* include padding and borders in element width */
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            background-color: #0d1f22;
-            color: #f4efe6;
-            font-family:Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-        }
-
-        img {
-            display: block;
-            width: 100%;
-        }
-
-        /* show which link is selected */
-        a:focus-visible {
-            outline: 3px solid #e3c39b;
-            outline-offset: 4px;
-        }
-
-        /* ================
-            Navigation Styles - Mobile First
-        ================ */
-
-        header {
-            background-color: #264027;
-            border-bottom: 2px solid #b38a58;
-        }
-
-
-    </style>
+    
 </head>
 
 <body>
@@ -63,27 +26,28 @@
 
     <main>
         <!-- Home Section -->
-         <div id="home">
-            <section>
-                <div>
-                    <h1>Velvet Rot</h1>
-                    <p>Official Website for the Fictional Band</p>
+        <div id="home">
+            <section id="hero" aria-labelledby="band-name">
+                <div class="hero-text">
+                 <h1 id="band-name">Velvet Rot</h1>
+                 <p>Official Website for the Fictional Band</p>
                 </div>
             </section>
-         </div>
+        </div>
 
-         <!-- Band About -->
-        <section
-        id="about"
-        class="content-section"
-        aria-labeledby="about-heading">
-            
+        <!-- Band About -->
+        <section id="about" class="content-section" aria-labeledby="about-heading">
+
             <h2 id="about-heading">About Velvet Rot</h2>
 
-            <p class="section-intro">Velvet Rot is a fictional queer grungegaze band known for their hazy and distorted sound. Formed in 20XX, the band has captivated audiences with their introspective lyrics and restless emo energy.</p>
+            <p class="section-intro">Velvet Rot is a fictional queer grungegaze band known for their hazy and distorted
+                sound. Formed in 20XX, the band has captivated audiences with their introspective lyrics and restless
+                emo energy.</p>
 
             <p class="section-intro">
-                Drawing inspiration from Forest Green, Microwave, Mom Jeans, PALESKIN, and Ethel Cain, the band makes music for those who feel like outsiders, embracing the beauty in melancholy and the power of self-expression.
+                Drawing inspiration from Forest Green, Microwave, Mom Jeans, PALESKIN, and Ethel Cain, the band makes
+                music for those who feel like outsiders, embracing the beauty in melancholy and the power of
+                self-expression.
             </p>
 
             <div class="members">
@@ -94,8 +58,10 @@
                         <span class="pronouns">(they/them)</span>
                     </h3>
                     <p><strong>Vocals and guitar</strong></p>
-                    <p> 
-                        Rowan is pansexual and non-binary. Their washed-out guitar textures and intimate lyrics give Velvet Rot its signature sound. Rowan's songwriting often explores themes of identity, love, and the struggles of navigating a world that doesn't always understand them.
+                    <p>
+                        Rowan is pansexual and non-binary. Their washed-out guitar textures and intimate lyrics give
+                        Velvet Rot its signature sound. Rowan's songwriting often explores themes of identity, love, and
+                        the struggles of navigating a world that doesn't always understand them.
                     </p>
                 </article>
 
@@ -106,7 +72,9 @@
                     </h3>
                     <p><strong>Bass and backing vocals</strong></p>
                     <p>
-                        Ellis is an asexual and genderqueer musician. Their deep, resonant bass lines provide the foundation for Velvet Rot's music, while their backing vocals add depth and harmony to the band's sound.
+                        Ellis is an asexual and genderqueer musician. Their deep, resonant bass lines provide the
+                        foundation for Velvet Rot's music, while their backing vocals add depth and harmony to the
+                        band's sound.
                     </p>
                 </article>
 
@@ -117,40 +85,99 @@
                     </h3>
                     <p><strong>Drums</strong></p>
                     <p>
-                        Jude is a bisexual cis man with a grungy style and a love for raw, energetic performances. His drumming drives the band's rhythm and adds a dynamic edge to their music.
+                        Jude is a bisexual cis man with a grungy style and a love for raw, energetic performances. His
+                        drumming drives the band's rhythm and adds a dynamic edge to their music.
                     </p>
                 </article>
             </div>
         </section>
 
         <!-- Music Section -->
-        <section
-        id="music"
-        class="content-section"
-        aria-labelledby="music-heading">
+        <section id="music" class="content-section" aria-labelledby="music-heading">
 
             <h2 id="music-heading">Music</h2>
 
             <p class="section-intro">
-                Three fictional albums have been released by Velvet Rot, each exploring different themes and sonic landscapes. The band's music is available on all major streaming platforms, and they continue to create new material that resonates with their growing fanbase.
+                Three fictional albums have been released by Velvet Rot, each exploring different themes and sonic
+                landscapes. The band's music is available on all major streaming platforms, and they continue to create
+                new material that resonates with their growing fanbase.
             </p>
 
             <div class="music-cards">
 
                 <article class="music-card">
-                    <img src="images/sunset_window.JPG"
-                    alt="Velvet Rot's debut album 'Sunset Window' cover art"
-                    loading="lazy">
+                    <img src="images/sunset_window.JPG" alt="Velvet Rot's debut album cover, a sunset over a window"
+                        loading="lazy">
 
                     <div class="card-content">
                         <h3>Sunset Window</h3>
                         <p>Velvet Rot's debut album, showcasing their signature sound and introspective lyrics.</p>
+                        <p class="release-date">
+                            EP | Released
+                            <time datetime="2023-05-15">May 15, 2023</time>
+                        </p>
                     </div>
-
                 </article>
+
+                <article class="music-card">
+                    <img src="images/landscape_mountains.JPG"
+                        alt="Velvet Rot's second album, a landscape image of mountains" loading="lazy">
+
+                    <div class="card-content">
+                        <h3>Impassable</h3>
+                        <p>The band's sophomore album, exploring themes of isolation and self-discovery.</p>
+                        <p class="release-date">
+                            LP | Released
+                            <time datetime="2024-02-20">February 20, 2024</time>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="music-card">
+                    <img src="images/foggy_road.jpg" alt="Velvet Rot's third album, a foggy road" loading="lazy">
+                    <div class="card-content">
+                        <h3>Mary, Maria</h3>
+                        <p>The band's latest album, delving into themes of love, loss, and the complexities of human
+                            emotion.</p>
+                        <p class="release-date">
+                            LP | Released
+                            <time datetime="2025-09-10">September 10, 2025</time>
+                        </p>
+                    </div>
+                </article>
+
             </div>
         </section>
+
+        <!-- Watch Section -->
+        <div class="watch-background">
+            <section id="watch" class="content-section" aria-labelledby="watch-heading">
+
+                <h2 id="watch-heading">Watch</h2>
+                <p class="section-intro">
+                    Velvet Rot's music videos and live performances are available on their official YouTube channel.
+                    Fans can experience the band's visual storytelling and energetic stage presence through these
+                    videos.
+                </p>
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/elr_q1DOYr8?si=8inf4yRDyFNcVQg1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <p class="video-caption">
+                    This video is included as musical inspiration for the fictional band Velvet Rot. The band draws
+                    inspiration from the hazy and distorted sound of Forest Green, incorporating similar elements into
+                    their own music.
+                </p>
+            </section>
+        </div>
     </main>
-    
+
+    <footer>
+        <p>&copy; 2026 Velvet Rot. All rights reserved.</p>
+        <p>Website created by Alex Tuck</p>
+        <p><a href="#home">Back to Top</a></p>
+    </footer>
+
 </body>
+
 </html>
